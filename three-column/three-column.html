@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bio</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+<style>
+p.copyright{
+    color: black;
+}
+
+section.three-column {
+    margin-top:30px;
+}
+
+aside.sidebar three-column {
+    width:15%;
+}
+
+aside.sidebar-right{
+    width:20%;
+    background-color: #CCC;
+    height: 100%;
+    float: right;
+    min-height: 480px;
+    padding: 1%;
+}
+
+article.three-column-content{
+    width:61%;
+    position: absolute;
+    left:15%;
+    float: none;
+}
+
+table.courses-table{
+    width:100%;
+}
+
+table.courses-table tr{
+    padding:3px, 5px;
+    background-color: white;
+    border:1px solid #CCC;
+    transition-duration: 0.2s;
+}
+table.courses-table tr:nth-child(even){
+    background-color: #CCC
+}
+table.courses-table tr:hover{
+    background-color: red;
+}
+table.courses-table td, table.courses-table th{
+    
+}
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header box-shadow">
+            <h1>David Patterson</h1>
+        </header>
+    <section class="content-bottom three-column">
+            <aside class="sidebar three-column">
+                <ul class="sidebar-links">
+                    <li><a href="http://www.google.com" target="_blank">Google.com</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </aside>
+            <article class="main-content three-column-content">
+                <div class="classes">
+                    <h1>My Courses</h1>
+                    <table class="courses-table">
+                        <tr>
+                            <th>Course</th>
+                            <th>Section</th>
+                            <th>Teacher</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>IS183</td>
+                            <td>12345</td>
+                            <td>L Phan</td>
+                            <td>T TH 2-3:50</td>
+                        </tr>
+                        <tr>
+                            <td>IS166</td>
+                            <td>12345</td>
+                            <td>S Rahmatian</td>
+                            <td>T TH 4-5:50</td>
+                        </tr>
+                        <tr>
+                            <td>IS189</td>
+                            <td>12345</td>
+                            <td>J Canelon</td>
+                            <td>M 6-8:50</td>
+                        </tr>
+                     
+                            <tr>
+                            <td>MGT 124</td>
+                            <td>12345</td>
+                            <td>L Houts</td>
+                            <td>M W 1-2:50</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <aside class= "sidebar-right">
+                <h1>This is heading</h1>
+                <p>Hi there...</p>
+            </aside>
+        </section>
+    </div>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by David Patterson
+        </p>
+    </footer>
+</body>
+</html>
