@@ -20,9 +20,8 @@
                     <input class="login-input" type="text" id="username"/>
                     <label for="password">Password</label>
                     <input class="login-input" type="password" id="password"/>
-					<button onclick="login()" id="btn-login" class="login-button">Login</button>
-                    <div id="erro-container"
-                </div>
+					<button id="btn-login" class="login-button">Login</button>
+				</div>
                 <p class="error message">saasdf</p>
 			</article>
 		</section>
@@ -32,22 +31,5 @@
 			<p class="copyright" style="font-weight:bold;">(c) Created by David Patterson</p>
 			</span>
 		</footer>
-
-		<script>
-            function login() {
-               
-                let username = document.getElementById('username').value;
-                 let password = document.getElementById('password').value;
-                 let errorContainer = document.getElementById('password')
-                 
-                 if(username == 'david' && password='patterson') {
-                    location.href = './home/home.html';
-                 } else{
-                    errorContainer.style.display = 'block';
-                    errorText.innerHTML = 'Error please try again...'
-                 }
-                 alert(password);
-            }
-		</script>
 	</body>
 </html>
