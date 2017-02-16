@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My Bio</title>
-		<link rel="stylesheet" type="text/css" href="../css/main.css"
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
 	<body>
 		<header class= "main-header box-shadow">
@@ -20,12 +20,24 @@
                     <input class="login-input" type="text" id="username"/>
                     <label for="password">Password</label>
                     <input class="login-input" type="password" id="password"/>
-					<button id="btn-login" class="login-button">Login</button>
+					
+					<input class="login" type="button" value="Login" id="submit" onclick="validate()"/>
 				</div>
-                <p class="error message">saasdf</p>
+                <p class="error message"></p>
 			</article>
 		</section>
-		
+<script language="javascript">
+			// Below function Executes on click of login button.
+			function validate(){
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if ( username == "david" && password == "patterson"){
+			alert ("Login Succesful");
+			window.location = "../three-column/three-column.html"; // Redirecting to other page.
+			return false;
+			}
+		}
+</script>
 		<footer class= "footer box-shadow">
 			<span>
 			<p class="copyright" style="font-weight:bold;">(c) Created by David Patterson</p>

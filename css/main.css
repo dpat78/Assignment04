@@ -1,4 +1,4 @@
- * {
+            * {
                 margin: 0;
                 padding: 0;
             }
@@ -9,6 +9,7 @@
                 min-height:100%;
                 display:flex;
                 flex-direction:column;
+                background-image: url("../images/goodbackground.jpg");
                 
             }
             .wrapper {
@@ -21,14 +22,15 @@
                 padding: 5px 15%;
             }
             .main-header h1 {
-                line-height: 50px;
+                line-height: 60px;
+                color: white;
             }
             .footer {
                 height: 50px;
                 background-color: #CCC;
             }
             span.logo {
-                color: blue;
+                color: white;
             }
             .copyright {
                 color: blue;
@@ -67,7 +69,7 @@
                 left: 170px;
             }
             .content-bottom {
-                overflow: auto;
+                
                 width: 70%;
                 max-width: 980px;
                 position: relative;
@@ -76,8 +78,9 @@
             .sidebar {
                 float: left;
                 background-color: #f1f1f1;
-                width: 25%;
+                width: 15%;
                 height: 500px;
+                opacity: 0.85;
             }
             .main-content {
                 float: right;
@@ -88,6 +91,8 @@
             }
             .sidebar-links {
                 background-color: #f1f1f1;
+                list-style-type: none;
+               
             }
             .sidebar-links li {
                 width: 100%;
@@ -127,29 +132,29 @@
 
 
         section.one-column{
-
+                margin-top: 30px;
         }
         
         article.main-content-column{
             width:100%;
             padding:0px;
-            height: 500px;
+            background-color: transparent;
         }
-
+         
+        
 		* {
-			margin:-2px;
+			margin: 0px;
 			padding:0;
-		  }
+			/* height: 70px; */
+			}
 			.main-header {
 				background-color:#ef2525;
 				height:50px;
 				width:100%;
-				padding: 5px 15px;
+				padding: 5px 0px;
 				}
 				
-			.main-header h1 {
-				line-height: 0px;
-				}
+			
 			
 			.footer {
 				position:absolute;
@@ -203,38 +208,44 @@
 			
 			.main-content {
 				float:right;
-				background-color:#cccccc;
+				background-color:lightslategray;
 				width:100%;
 				height:500px;
 				padding:0% 2% 0% 2%;
+                opacity: .9;
             }
 				
 		
 			
             div.login-form {
+                padding: 20px;
                 width: 200px;
                 height:250px;
                 background-color: #CCC;
                 margin: 240px auto 0;
                 border-radius: 7px;
+                background: rgba(175, 202, 227, 0.2);
             }
 
             input.login-input {
                 width:100%;
                 padding:5px, 2px;
                 border-radius: 5px;
+                margin:7px 0;
+                height: 20px;
             }
 
             h1.h1login{
                 margin-bottom:15px;
             }
 
-            button.login-button{
-                padding:10px, 15px;
-                border-radius: 7px;
-                background-color: black;
-                color: #FFF;
-                 }
+            h1.course-heading{
+                font-size: 25px;
+                text-align: center;
+                color: white;
+            }
+
+            
             p.error-message{
                 display:none;
                margin-top:10px;
@@ -245,3 +256,66 @@
                 border: 1px solid yellow;
                 border-radius: 5px;
             }
+
+    p.copyright{
+        color: black;
+        line-height: 1px;
+}
+
+section.three-column {
+    overflow: auto;
+    margin-top:30px;
+    height: 100%;
+}
+
+aside.sidebar three-column {
+    width:15%;
+}
+
+aside.sidebar-right{
+    width: 18%;
+    background-color: #f1f1f1;
+    /* height: 100%; */
+    float: right;
+    min-height: 481px;
+    padding: 1%;
+    margin: auto;
+    opacity: .7;
+}
+
+article.three-column-content{
+    width:61%;
+    position: absolute;
+    left:15%;
+    float: none;
+}
+
+table.courses-table{
+    width:100%;
+    font-size: 25px;
+}
+
+table.courses-table tr{
+    padding:3px, 5px;
+    background-color: white;
+    border:1px solid #CCC;
+    transition-duration: 0.2s;
+}
+table.courses-table tr:nth-child(even){
+    background-color: #CCC
+}
+table.courses-table tr:hover{
+    background-color: cadetblue;
+    opacity: .6;
+}
+table.courses-table td, table.courses-table th{
+    
+}
+
+input#submit.login {
+     height: 30px;
+    background: lightsteelblue;
+    font-weight: bolder;
+    width: 50px;
+    border-radius: 10px;
+}
