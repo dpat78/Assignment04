@@ -9,7 +9,7 @@
                 min-height:100%;
                 display:flex;
                 flex-direction:column;
-                background-image: url("../images/goodbackground.jpg");
+                background-image: url("../images/rocketlaunch.jpg");
                 
             }
             .wrapper {
@@ -17,20 +17,39 @@
             }
             .main-header {
                 background-color: #CCC;
-                height: 50px;
+                height: 100px;
                 width: 70%;
                 padding: 5px 15%;
             }
             .main-header h1 {
                 line-height: 60px;
-                color: white;
+                color: darkorange;
             }
             .footer {
-                height: 50px;
+                height: 75px;
                 background-color: #CCC;
             }
+
+            
+            .footer-contact li{
+                display: inline;
+                font-size: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 20px 0px 0;
+                float: right;
+            }
+
+            li.number{
+                padding: 30px 20px 0px 0;
+            }
+
             span.logo {
                 color: white;
+            }
+
+            span.logo img{
+                height: 100px;
+                float: left;
             }
             .copyright {
                 color: blue;
@@ -92,11 +111,13 @@
             .sidebar-links {
                 background-color: #f1f1f1;
                 list-style-type: none;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
                
             }
             .sidebar-links li {
                 width: 100%;
-                height: 30px;
+                height: 50px;
                 border: 1px solid #CCC;
                 border-top: 1px solid #FFF;
             }
@@ -105,10 +126,11 @@
                 padding: 7px;
                 text-decoration: none;
                 transition-duration: 0.7s;
+                height:35px;
             }
             .sidebar-links a:hover {
-                background-color: #CCC;
-                color: #000;
+                background-color:indianred;
+                color: orange;
             }
 			.gallery h1 {
 				margin: 30px 0 15px 0;
@@ -126,6 +148,11 @@
 				width:125px;
 				height:100px;
 			}
+
+            .main-gallery{
+                height: 75px;
+                width:75px;
+            }
 
 
 
@@ -148,8 +175,8 @@
 			/* height: 70px; */
 			}
 			.main-header {
-				background-color:#ef2525;
-				height:50px;
+				background-color: lightyellow;
+				height:100px;
 				width:100%;
 				padding: 5px 0px;
 				}
@@ -161,10 +188,16 @@
 				bottom: 0;
 				right:0;
 				left:0;
-				height:50px;
-				background-color:#ef2525;
+				height:75px;
+				background-color:lightyellow;
 				}
 			
+                .header-quote{
+                  padding-top: 25px;
+                  font-size: 20px;
+                  
+                }
+
 			.logo {
 				color:white;
 				}
@@ -180,7 +213,8 @@
 				box-shadow: inset 0px 0px 65px 0px #080707,5px 5px 5px 1px #242424;
 				-webkit-box-shadow: inset 0px 0px 65px 0px #080707,5px 5px 5px 1px #242424;
 				-moz-box-shadow: inset 0px 0px 65px 0px #080707,5px 5px 5px 1px #242424;
-				-o-box-shadow: inset 0px 0px 65px 0px #080707,5px 5px 5px 1px #242424
+				-o-box-shadow: inset 0px 0px 65px 0px #080707,5px 5px 5px 1px #242424;
+                
 				}
 			
 			.content-top {
@@ -208,11 +242,11 @@
 			
 			.main-content {
 				float:right;
-				background-color:lightslategray;
+				background-color: rgba(255, 101, 49, 0.8);
 				width:100%;
 				height:500px;
 				padding:0% 2% 0% 2%;
-                opacity: .9;
+                
             }
 				
 		
@@ -227,13 +261,19 @@
                 background: rgba(175, 202, 227, 0.2);
             }
 
+            div.login-form label{
+                color: white;
+            }
             input.login-input {
                 width:100%;
                 padding:5px, 2px;
                 border-radius: 5px;
                 margin:7px 0;
                 height: 20px;
+
             }
+
+
 
             h1.h1login{
                 margin-bottom:15px;
@@ -243,6 +283,7 @@
                 font-size: 25px;
                 text-align: center;
                 color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
 
             
@@ -277,10 +318,25 @@ aside.sidebar-right{
     background-color: #f1f1f1;
     /* height: 100%; */
     float: right;
-    min-height: 481px;
+    min-height: 480px;
     padding: 1%;
     margin: auto;
-    opacity: .7;
+    
+}
+
+.sidebar-right li {
+    list-style-type: none;
+}
+
+.sidebar-right img{
+    height: 90px;
+    width: 150px;
+}
+
+.sidebar-right a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 14px;
 }
 
 article.three-column-content{
@@ -293,6 +349,7 @@ article.three-column-content{
 table.courses-table{
     width:100%;
     font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 table.courses-table tr{
@@ -301,13 +358,8 @@ table.courses-table tr{
     border:1px solid #CCC;
     transition-duration: 0.2s;
 }
-table.courses-table tr:nth-child(even){
-    background-color: #CCC
-}
-table.courses-table tr:hover{
-    background-color: cadetblue;
-    opacity: .6;
-}
+
+
 table.courses-table td, table.courses-table th{
     
 }
@@ -318,4 +370,48 @@ input#submit.login {
     font-weight: bolder;
     width: 50px;
     border-radius: 10px;
+}
+
+.social-media{
+    height: 50px;
+    width:50px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+}
+
+.social-icons{
+    position: absolute;
+    display: block;
+    margin: auto;
+    margin-left: 352px;
+    
+}
+
+.social-icons li{
+    list-style-type: none;
+    display: inline;
+}
+
+.social-icons img{
+    opacity: 1.0;
+}
+
+div.about{
+    margin-top: 70px;
+    background-color: rgba(255, 101, 49, 0.8);
+    position: absolute;
+    height: 350px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.about p{
+    padding-left: 4em;
+}
+
+.h1about{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0 30px 0;
 }
